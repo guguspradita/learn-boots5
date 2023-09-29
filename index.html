@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Desaign Responsive with Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .bordered {
+        border: solid;
+    }
+</style>
+
+<body>
+
+    <div class="p-3 container text-center">
+        <div class="row bg-info">
+            <div class="col border">
+                1 of 2
+            </div>
+            <div class="col border">
+                2 of 2
+            </div>
+        </div>
+        <div class="row bg-danger">
+            <div class="col border">
+                1 of 3
+            </div>
+            <div class="col border">
+                2 of 3
+            </div>
+            <div class="col border">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 container text-center">
+        <div class="row bg-info">
+          <div class="col border">
+            1 of 3
+          </div>
+          <div class="col-6 border">
+            2 of 3 (wider)
+          </div>
+          <div class="col border">
+            3 of 3
+          </div>
+        </div>
+        <div class="row bg-success">
+          <div class="col border">
+            1 of 3
+          </div>
+          <div class="col-5 border">
+            2 of 3 (wider)
+          </div>
+          <div class="col border">
+            3 of 3
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 container text-center">
+        <div class="row justify-content-md-center bg-danger">
+          <div class="col col-lg-2 border">
+            1 of 3
+          </div>
+          <div class="col-md-auto border">
+            Variable width content
+          </div>
+          <div class="col col-lg-2 border">
+            3 of 3
+          </div>
+        </div>
+        <div class="row bg-success">
+          <div class="col border">
+            1 of 3
+          </div>
+          <div class="col-md-auto border">
+            Variable width content
+          </div>
+          <div class="col col-lg-2 border">
+            3 of 3
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 container text-center">
+        <div class="row bg-primary">
+          <div class="col border">col</div>
+          <div class="col border">col</div>
+          <div class="col border">col</div>
+          <div class="col border">col</div>
+        </div>
+        <div class="row bg-warning">
+          <div class="col-8 border">col-8</div>
+          <div class="col-4 border">col-4</div>
+        </div>
+      </div>
+
+      <div class="mt-5 container text-center">
+        <div class="row bg-primary">
+          <div class="col-sm-8 border">col-sm-8</div>
+          <div class="col-sm-4 border">col-sm-4</div>
+        </div>
+        <div class="row bg-danger">
+          <div class="col-sm border">col-sm</div>
+          <div class="col-sm border">col-sm</div>
+          <div class="col-sm border">col-sm</div>
+        </div>
+      </div>
+
+      <div class="mt-5 container text-center">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row bg-primary">
+          <div class="col-md-8 border">.col-md-8</div>
+          <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row bg-danger">
+          <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row bg-warning">
+          <div class="col-6 border">.col-6</div>
+          <div class="col-6 border">.col-6</div>
+        </div>
+      </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
