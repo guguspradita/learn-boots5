@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .bordered {
+        border: solid;
+    }
+
+    .kotak {
+        background-color: aqua;
+        height: 100px;
+    }
+
+    .turun {
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="p-3 container bordered">
+
+        <!-- Vertical alignment Start -->
+        <div class="row justify-content-start" style="height: 330px;">
+            <div class="col-12 align-self-start col-sm-6 col-md-4 col-lg-3 turun">
+                <div class="kotak">1</div>
+            </div>
+            <div class="col-12 align-self-center col-sm-6 col-md-4 col-lg-3 turun">
+                <div class="kotak">2</div>
+            </div>
+            <div class="col-12 align-self-end col-sm-6 col-md-4 col-lg-3 turun">
+                <div class="kotak">3</div>
+            </div>
+        </div>
+        <!-- Vertical alignment End -->
+
+        <!-- Horizontal alignment Start -->
+        <div class="mt-3 row justify-content-center" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+        </div>
+
+        <div class="mt-3 row justify-content-end" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+        </div>
+
+        <div class="mt-3 row justify-content-around" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+        </div>
+
+        <div class="mt-3 row justify-content-between" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+        </div>
+
+        <div class="mt-3 row justify-content-evenly" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+            <div class="col-4">
+                <div class="kotak text-center">One of two columns</div>
+            </div>
+        </div>
+        <!-- Horizontal alignment End -->
+
+        <!-- Reordering Start -->
+        <div class="mt-3 row justify-content-evenly" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">First in DOM, no order applied</div>
+            </div>
+            <div class="col-4 order-2">
+                <div class="kotak text-center">Second in DOM, with a larger order</div>
+            </div>
+            <div class="col-4 order-1">
+                <div class="kotak text-center">Third in DOM, with an order of 1</div>
+            </div>
+        </div>
+        <!-- Reordering End -->
+
+        <!-- Offset classes Start -->
+        <div class="mt-3 row" style="height: 100px;">
+            <div class="col-4">
+                <div class="kotak text-center">.col-md-4</div>
+            </div>
+            <div class="col-4 offset-md-4">
+                <div class="kotak text-center">.col-md-4 .offset-md-4</div>
+            </div>
+        </div>
+        <!-- Offset classes End -->
+
+        <!-- Gutters Start -->
+         <div class="mt-5 row" style="height: 100px;">
+            <div class="col-3 g-0">
+                <div class="kotak">1</div>
+            </div>
+            <div class="col-3">
+                <div class="kotak">2</div>
+            </div>
+            <div class="col-3">
+                <div class="kotak">3</div>
+            </div>
+            <div class="col-3">
+                <div class="kotak">4</div>
+            </div>
+        </div>
+        <!-- Gutters End -->
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
